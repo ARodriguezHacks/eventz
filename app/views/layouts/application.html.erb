@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Eventz</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+ <head>
+  <title>Eventz</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+ </head>
+ <body>
+  <header>
+   <h1>Eventz</h1>
+  </header>
+  <div class="content">
+   <%= yield %>
+  </div>
+  <footer>
+   <p>
+    Designed and Developed by Angie Rodriguez
+   </p>
+  </footer>
+ </body>
 </html>
