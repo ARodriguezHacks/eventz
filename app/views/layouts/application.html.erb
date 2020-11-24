@@ -9,14 +9,14 @@
  </head>
  <body>
   <header>
-   <h1>Eventz</h1>
+   <%= image_tag("logo") %>
   </header>
   <div class="content">
    <%= yield %>
   </div>
   <footer>
-   <p>
-    Designed and Developed by Angie Rodriguez
+   <p>Copyright &copy; <%= Time.now.year%>
+    <%= link_to 'Angie Rodriguez - Developer', 'https://angierodriguez.dev/'%>
    </p>
   </footer>
  </body>
