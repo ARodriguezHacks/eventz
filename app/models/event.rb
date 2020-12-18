@@ -3,3 +3,9 @@ class Event < ApplicationRecord
     price.blank? || price.zero?
   end
 end
+
+class Hello
+  def hi
+    price.blank?
+  end
+end
